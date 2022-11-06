@@ -36,14 +36,8 @@ $ rustc --version
 
 ## How to install a new Tauri project in GitHub from scratch
 
-Start by creating the repository at GitHub
+Start by creating the repository at GitHub completely empty.
 
-Clone the repository, e.g.:
-
-```bash
-$ git clone https://github.com/lauler1/my-first-tauri-test.git
-```
-This process will create a subdirectory with the project name, e.g. `my-first-tauri-test`. Do not enter this directory yet.
 
 Create a complete Taurus project using automated templates. Use the same project name and chose to replace the content of the folder.
 
@@ -68,6 +62,16 @@ This process will create a complete vanila software.
 Now you can enter the project directory:
 ```bash
 $ cd my-first-tauri-test
+```
+Configure the project with Git and push to Github:
+
+```bash
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/lauler1/my-first-tauri-test.git
+git push -u origin main
 ```
 
 Now compile and run:
