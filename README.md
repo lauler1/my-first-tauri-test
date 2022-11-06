@@ -79,3 +79,11 @@ Now compile and run:
 $ npm install
 $ npm run tauri dev
 ```
+## Conclusions
+
+1. Tauri generates a smaller app than Electron which starts faster.
+1. Tauri compiles always the binary before run
+   1. The first compilation is **VERY** slow. After that it is faster, but still slow.
+   1. This process is very slow for development.
+1. I could not (so far) run JQuery. It cannot find the command `require`.
+
